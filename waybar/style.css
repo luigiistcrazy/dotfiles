@@ -1,0 +1,122 @@
+* {
+	border: none;
+	border-radius: 15px;
+	font-family: "FiraCode Nerd Font";
+	font-weight: 500;
+	font-size: 15px;
+	min-height: 25px;
+}
+
+window#waybar {
+	background: transparent;
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+#network {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #ffffee;
+	background: #3E1F47;
+}
+
+#pulseaudio {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #ffffee;
+	background: #272640;
+}
+
+@keyframes blink {
+    to {
+        background-color: #BF616A;
+        color: #9F9C9D;
+    }
+}
+
+#clock {
+	margin-top: 6px;
+	margin-left: 8px;
+	margin-right: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #ffffee;
+	background: #4D194D;
+	/*background: #1A1826;*/
+}
+
+#memory {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: #ffffee;
+	background: #0B525B;
+}
+#cpu {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: #ffffee;
+	background: #0B525B;
+}
+
+#tray {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: #ffffee;
+	background: #1B3A4B;
+}
+#custom-icon {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 16px;
+	border-radius: 10px;
+	transition: none;
+	font-size: 20px;
+	color: #89DCEB;
+	background-color: #006466;
+}
+
+#window {
+	background-color: #212F45;
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	border-radius: 10px;
+	opacity: 0.8;
+}
+window#waybar.empty #window {
+	background: none;
+}

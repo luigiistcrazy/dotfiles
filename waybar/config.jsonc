@@ -1,0 +1,61 @@
+{
+  "gtk-layer-shell": false,
+  "layer": "top",
+  "modules-left": [
+    "custom/icon",
+    "cpu",
+    "memory",
+    "tray"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "network",
+    "clock"
+  ],
+  "modules-center": [
+    "hyprland/window"
+  ],
+  "custom/icon":{
+    "format": ""
+    },
+  "pulseaudio": {
+    "tooltip": false,
+    "scroll-step": 5,
+    "format": "  {volume}%",
+    "format-muted": "  {volume}%",
+    "on-click": "pamixer -t",
+    "on-scroll-up": "pamixer -i 5",
+    "on-scroll-down": "pamixer -d 5"
+  },
+  "network": {
+    "tooltip": false,
+    "format": "{ipaddr} {icon}",
+    "format-icons": {
+      "wifi": [
+        " "
+      ],
+      "ethernet": [
+        " "
+      ],
+      "disconnected": [
+        "󰲛 "
+      ]
+    },
+    "on-click": "kitty -e nmtui"
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
+  },
+  "cpu": {
+    "interval": 1,
+    "on-click": "kitty btop",
+    "format": "{usage:02}%  "
+  },
+  "memory": {
+    "interval": 5,
+    "on-click": "kitty btop",
+    "format": "{}%  ",
+    "max-length": 10
+  }
+}
